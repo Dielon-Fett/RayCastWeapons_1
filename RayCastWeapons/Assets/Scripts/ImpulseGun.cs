@@ -9,11 +9,18 @@ public class ImpulseGun : RayCastWeapon
 
     public override void Fire(Vector3 fireFromPosition)
     {
-        base.Fire(fireFromPosition);
-        if (raycastHit.rigidbody)
+
+        if (Physics.Raycast(fireFromPosition, transform.forward, out raycastHit, Range))
         {
-           
-          
+            Rigidbody health = raycastHit.collider.GetComponent<Rigidbody>();
+            if (health)
+            {
+                Vector3 direcetion = transform.position - health.transform.position;
+                health.AddForce(-direcetion * ImpulseAmount, ForceMode.Impulse);
+            }
         }
+
+            base.Fire(fireFromPosition);
+     
     }
 }

@@ -1,0 +1,2 @@
+C:\Users\S00187359\Documents\GitHub\RayCastWeapons_1\RayCastWeapons\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\S00187359\Documents\GitHub\RayCastWeapons_1\RayCastWeapons\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
